@@ -80,29 +80,16 @@
   }
   </script>
 
-  <!-- 📊 Google Analytics with Consent -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4J2GSZZHTN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    
-    gtag('consent', 'default', {
-      'analytics_storage': 'denied'
-    });
-    
-    gtag('js', new Date());
-    gtag('config', 'G-4J2GSZZHTN', {
-      'anonymize_ip': true,
-      'cookie_flags': 'SameSite=None;Secure'
-    });
-    
-    const consent = localStorage.getItem('cookie_consent');
-    if (consent === 'accepted') {
-      gtag('consent', 'update', {
-        'analytics_storage': 'granted'
-      });
-    }
-  </script>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-4J2GSZZHTN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4J2GSZZHTN', {
+    anonymize_ip: true,
+    cookie_flags: 'SameSite=None;Secure'
+  });
+</script>
 
   <style>
     /* ========================================
